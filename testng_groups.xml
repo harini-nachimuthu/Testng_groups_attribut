@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ExecutionSuite">
+    <test name="smoke">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Employee_Test.TC_007_EmployeeTest"/>
+        </classes>
+    </test>
+    <test name="regression">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Employee_Test.TC_007_EmployeeTest"/>
+        </classes>
+    </test>
+    <test name="critical">
+        <groups>
+            <run>
+                <include name="critical"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Employee_Test.TC_007_EmployeeTest"/>
+        </classes>
+    </test>
+</suite>
